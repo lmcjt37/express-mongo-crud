@@ -1,0 +1,30 @@
+{
+  "name": "express-mongo-crud",
+  "version": "1.0.0",
+  "description": "A simple CRUD using ExpressJS and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "dev": "parallelshell 'npm run shellstartdb' 'npm run start'",
+    "start": "nodemon server.js",
+    "shellstartdb": "mongod --dbpath /usr/local/var/mongodb --port 37001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongodb",
+    "express",
+    "node"
+  ],
+  "author": "Luke Taylor",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "internal-ip": "^1.2.0",
+    "mongodb": "^2.2.16",
+    "parallelshell": "^2.0.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "nodemon": "^1.11.0"
+  }
+}
